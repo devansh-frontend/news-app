@@ -2,7 +2,7 @@
 const myKey = "3ad24b429c9548c991ca5cbc9290254e";
 async function fetchBreakingNews(){
    try {
-      let breakingNews =  await (await fetch(`http://newsapi.org/v2/top-headlines?country=in&pageSize=1&apiKey=${myKey}`)).json();
+      let breakingNews =  await (await fetch(`https://newsapi.org/v2/top-headlines?country=in&pageSize=1&apiKey=${myKey}`)).json();
       console.log(breakingNews)
    setBreakingNews(breakingNews.articles[0]);     
    } catch (error) {
@@ -29,7 +29,7 @@ function setBreakingNews(post) {
 
 async function fetchLatestNews(){
    try {
-      let latestNews =  await (await fetch(`http://newsapi.org/v2/top-headlines?country=in&pageSize=7&apiKey=${myKey}`)).json();
+      let latestNews =  await (await fetch(`https://newsapi.org/v2/top-headlines?country=in&pageSize=7&apiKey=${myKey}`)).json();
       latestNews = latestNews.articles;
       latestNews.shift();
       setNews(latestNews, document.querySelector("#latest .row") , document.querySelector("#latest #template"));   
@@ -39,7 +39,7 @@ async function fetchLatestNews(){
 }
 async function fetchTrendingNews(){
    try {
-      let trendingNews =  await (await fetch(`http://newsapi.org/v2/top-headlines?category=technology&country=in&pageSize=2&apiKey=${myKey}`)).json();
+      let trendingNews =  await (await fetch(`https://newsapi.org/v2/top-headlines?category=technology&country=in&pageSize=2&apiKey=${myKey}`)).json();
       setNews(trendingNews.articles, document.querySelector("#trending .row") ,document.querySelector("#trending #template")) 
    } catch (error) {
       setNews([], document.querySelector("#trending .row") ,document.querySelector("#trending #template"));
@@ -47,7 +47,7 @@ async function fetchTrendingNews(){
 }
 async function fetchSportsNews(){
    try {
-      let news =  await (await fetch(`http://newsapi.org/v2/top-headlines?category=sports&country=in&pageSize=3&apiKey=${myKey}`)).json();
+      let news =  await (await fetch(`https://newsapi.org/v2/top-headlines?category=sports&country=in&pageSize=3&apiKey=${myKey}`)).json();
       setNews(news.articles ,document.querySelector(".sports-wrapper") , document.querySelector("#template3") ) ;
    } catch (error) {
       setNews([] , document.querySelector(".sports-wrapper") , document.querySelector("#template3")) ;
@@ -56,7 +56,7 @@ async function fetchSportsNews(){
 
 async function fetchEntertainmentNews(){
    try {
-      let news =  await (await fetch(`http://newsapi.org/v2/top-headlines?category=entertainment&country=in&pageSize=3&apiKey=${myKey}`)).json();
+      let news =  await (await fetch(`https://newsapi.org/v2/top-headlines?category=entertainment&country=in&pageSize=3&apiKey=${myKey}`)).json();
       setNews(news.articles ,document.querySelector(".entertainment-wrapper") , document.querySelector("#template3")) ;
    } catch (error) {
       setNews([] ,document.querySelector(".entertainment-wrapper") , document.querySelector("#template3")) ;

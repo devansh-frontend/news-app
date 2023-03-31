@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./index.js" defer></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body class="bg-body-tertiary">
+  <header class="sticky-top bg-white shadow-sm">
+    <div class="container d-flex align-items-center justify-content-between py-2">
+      <a class="text-decoration-none me-2 me-md-4 fs-4 fw-bold" href="index.html"> <b class="text-nowrap">G 
+        <span class="text-danger">N</span><span class="text-success">e</span><span class="text-warning">w</span><span class="text-muted">s</span>
+      </b> 
+    </a>
+
+      <div class="nav-pills mx-auto sidenav">
+        <nav class="navbar navbar-top">
+          <div class="container">
+            <ul class="p-0 m-0">
+            <li class="nav-item">
+              <a class="nav-link px-1 py-1 text-muted" href="index.html"> <span><i class="uil uil-estate d-block d-md-none text-center fs-5"></i></span> <span class="d-none d-md-block"> Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted px-1 py-1" href="polls.html">
+                <span><i class="uil uil-comment-chart-line d-block d-md-none text-center fs-5"></i></span> <span class="d-none d-md-block"> Polls</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted px-1 py-1 " href="quiz.html"><span><i class="uil uil-question-circle d-block d-md-none text-center fs-5"></i></span> <span class="d-none d-md-block"> Quiz</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active px-1 py-1" href="contact.html"><span><i class="uil uil-windy d-block d-md-none text-center fs-5"></i></span> <span class="d-none d-md-block"> Weather</span></a>
+            </li>
+          </ul>  
+      </div>
+      </nav>
+      </div>
+
+      <form class="d-flex position-relative ms-2 ms-md-2 justify-self-stretch bg-body-tertiary search-form" role="search" method="get" action="search.html">
+        <input class="form-control rounded bg-light" type="text" placeholder="Search" aria-label="Search" name="search">
+        <button class="btn position-absolute border-0 rounded-end search-btn" type="submit">
+         <span><i class="uil uil-search"></i></span>
+      </button>
+      </form>
+
+      <div class="profile ms-2 text-lg-end">
+        <div class="spinner-border text-primary profile-loader btn" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="isLogout d-none">
+          <a href="login.html">
+            <button class="btn  btn-outline-success rounded-circle">
+             <span><i class="uil uil-user"></i></span>
+            </button>
+          </a>
+        </div>
+        <div class="isLogin d-none">
+          <a href="account.html" class="text-decoration-none">
+          <button class="btn btn-warning rounded-circle">
+            <span >D</span>
+          </button>
+          </a>
+        </div>
+    </div>
+    </div>
+  <div class="container py-0">
+  <nav class="navbar  navbar-categories pb-0">
+    <ul class="nav-pills p-0 m-0">
+      <li><a href="categories.html?category=latest" class="nav-link ">Latest</a></li>
+      <li><a href="categories.html?category=elections" class="nav-link">Elections</a></li>
+      <li><a href="categories.html?category=world" class="nav-link">World</a></li>
+      <li><a href="categories.html?category=health" class="nav-link">Health</a></li>
+      <li><a href="categories.html?category=crime" class="nav-link">Crime</a></li>
+      <li><a href="categories.html?category=technology" class="nav-link">Technology</a></li>
+      <li><a href="categories.html?category=business" class="nav-link">Business</a></li>
+      <li><a href="categories.html?category=cricket" class="nav-link">Cricket</a></li>
+      <li><a href="categories.html?category=entertainment" class="nav-link">Entertainment </a></li>
+      <li><a href="categories.html?category=auto" class="nav-link">Auto</a></li>
+      <li><a href="categories.html?category=fun" class="nav-link">Fun</a></li>
+      <li><a href="categories.html?category=videos" class="nav-link">Videos</a></li>
+      <li><a href="categories.html?category=science" class="nav-link">Science</a></li>
+    </ul>
+  </nav>
+  </div>
+</header>
+    <div class="container py-3">
+        <div class="row">
+            <div class="col">
+                <h1>ContactUs Page</h1>  
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>         
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+  const sideNav = document.querySelector(".sidenav");
+  const menuBtn = document.querySelector(".menu-btn");
+  menuBtn.addEventListener('click' , (event) => {
+    sideNav.classList.add("active");
+  })
+  sideNav.addEventListener('click' , (event)=>{
+    if(event.target.contains(sideNav)){
+       sideNav.classList.remove('active')
+    }
+  })
+</script>
+
+</html>

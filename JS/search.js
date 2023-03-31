@@ -43,14 +43,14 @@ async function fetchNews(){
     else if(posts.length == 0){
        container.innerHTML = (`
        <div class='col text-center'>
-        <img class='img-fluid d-block m-auto' src='./images/No data-amico.svg' width='240px'/>
+        <img class='img-fluid d-block m-auto' src='../images/No data-amico.svg' width='240px'/>
         <h4 >Result Not Found</h4>
         <a href='index.html' class='btn btn-outline-primary'>Go Back</a>
         </div>`);
     }
  }
  function setError(error , container ) {
-    container.innerHTML = ("<div class='col text-center text-danger small'> <img class='img-fluid d-block m-auto' src='./images/Oops! 404 Error with a broken robot-rafiki.svg' width='240px'/><p> Network error. Please try again later <p></div>");
+    container.innerHTML = ("<div class='col text-center text-danger small'> <img class='img-fluid d-block m-auto' src='../images/Oops! 404 Error with a broken robot-rafiki.svg' width='240px'/><p> Network error. Please try again later <p></div>");
 }
 
  function updateTime(str) {

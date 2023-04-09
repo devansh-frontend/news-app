@@ -73,8 +73,8 @@ async function getWeatherInfo(locationID) {
 //showing current weather
 function show_current_weather(data) {
   data.IsDayTime
-    ? (document.querySelector(".current-weather-card").style.backgroundImage = `url("../images/day.jpg")`)
-    : (document.querySelector(".current-weather-card").style.backgroundImage = `url("../images/night.jpg")`);
+    ? (document.querySelector(".current-weather-card").style.backgroundImage = `url("images/day.jpg")`)
+    : (document.querySelector(".current-weather-card").style.backgroundImage = `url("images/night.jpg")`);
   document.querySelector(".current-weather-card").style.color = `#ffffff`;
   document.querySelector(".main-card figcaption").textContent = data.WeatherText;
   document.querySelector(".main-card img").src = `images/Weather Icons/${data.WeatherIcon}.png`;

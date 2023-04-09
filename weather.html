@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check current weather condition of your location">
+    <meta name="author" content="Devansh Chauhan">
+    <title>Weather 365</title>
+    <script src="./JS/weather.js" async defer></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="CSS/weather.css">
+</head>
+<body class="d-flex flex-column">
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><h3>News 365</h3></a>
+            <div class="form">
+                <form class="d-flex p-0 m-0" role="search">
+                    <input class="search-input" type="search" placeholder="Search your location" autocomplete="off" name="Search" required>
+                    <button class="search-btn" type="button"><i class="uil uil-search"></i></button>
+                </form> 
+                <div class="locations"><ul class="list"></ul>
+                </div>   
+            </div>  
+        </div>
+    </header>
+    <section class="weather">
+        <div class="container">
+            <div class="location-name">Please wait...</div>
+            <div class="flexbox">
+                <div class="main-card">
+                    <div class="current-weather-card">
+                        <div class="card-text">
+                            <div class="date">
+                                <div class="day">...</div>
+                                <div class="time">dd mm yyyy</div>
+                            </div>
+                            <div class="temp">00 &deg;C</div>
+                        </div>
+                        <div class="card-icon">
+                            <figure>
+                                <img src="images/Weather Icons/2.png" width="140" height="84">
+                                <figcaption>.... ....</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="secondary-card">
+                        <div class="card-body">
+                            <div class="AQI">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <span class="aqi-text">Air Quality</span>
+                                        <span class="aqi-data">----</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">More on AccuWeather</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="_5-days-forcast-card">
+                    <div class="card-header">
+                        5 Days forcast
+                    </div>
+                    <template id="template">
+                        <div class="day-forcast">
+                            <div class="date">dd mm</div>
+                            <div class="icon">
+                                <img src="images/Weather Icons/11.png" width="75" height="45">
+                            </div>
+                            <div class="temp">00 &deg;C</div>
+                        </div>
+
+                    </template>
+
+                    <div class="card-body">
+                        <div class="day-forcast">
+                            <div class="date">dd mm</div>
+                            <div class="icon">
+                                <img src="images/Weather Icons/11.png" width="75" height="45">
+                            </div>
+                            <div class="temp">00 &deg;C</div>
+                        </div>
+                        <div class="day-forcast">
+                            <div class="date">dd mm</div>
+                            <div class="icon">
+                                <img src="images/Weather Icons/30.png" width="75" height="45">
+                            </div>
+                            <div class="temp">00 &deg;C</div>
+                        </div>
+                        <div class="day-forcast">
+                            <div class="date">dd mm</div>
+                            <div class="icon">
+                                <img src="images/Weather Icons/5.png" width="75" height="45">
+                            </div>
+                            <div class="temp">00 &deg;C</div>
+                        </div>
+                        <div class="day-forcast">
+                            <div class="date">dd mm</div>
+                            <div class="icon">
+                                <img src="images/Weather Icons/15.png" width="75" height="45">
+                            </div>
+                            <div class="temp">00 &deg;C</div>
+                        </div>
+                        <div class="day-forcast">
+                            <div class="date">dd mm</div>
+                            <div class="icon">
+                                <img src="images/Weather Icons/1.png" width="75" height="45">
+                            </div>
+                            <div class="temp">00 &deg;C</div>
+                        </div>
+                    
+                    </div>
+
+                </div>
+            </div>
+            <div class="_12-hours-forcast-card">
+                <div class="card-header">12 Hours Forcast</div>
+                <template id="template">
+                    <div class="hour-forcast">
+                        <div class="time">-- --</div>
+                        <div class="icon">
+                            <img src="images/Weather Icons/11.png" width="75" height="45">
+                        </div>
+                        <div class="temp">00 &deg;C</div>
+                    </div>
+                </template>
+
+                <div class="card-body">
+                <div class="hour-forcast">
+                    <div class="time">-- --</div>
+                    <div class="icon">
+                        <img src="images/Weather Icons/11.png" width="75" height="45">
+                    </div>
+                    <div class="temp">00 &deg;C</div>
+                </div>
+                <div class="hour-forcast">
+                    <div class="time">-- --</div>
+                    <div class="icon">
+                        <img src="images/Weather Icons/11.png" width="75" height="45">
+                    </div>
+                    <div class="temp">00 &deg;C</div>
+                </div>
+                <div class="hour-forcast">
+                    <div class="time">-- --</div>
+                    <div class="icon">
+                        <img src="images/Weather Icons/11.png" width="75" height="45">
+                    </div>
+                    <div class="temp">00 &deg;C</div>
+                </div>
+                <div class="hour-forcast">
+                    <div class="time">-- --</div>
+                    <div class="icon">
+                        <img src="images/Weather Icons/11.png" width="75" height="45">
+                    </div>
+                    <div class="temp">00 &deg;C</div>
+                </div>
+                <div class="hour-forcast">
+                    <div class="time">-- --</div>
+                    <div class="icon">
+                        <img src="images/Weather Icons/11.png" width="75" height="45">
+                    </div>
+                    <div class="temp">00 &deg;C</div>
+                </div>
+                <div class="hour-forcast">
+                    <div class="time">-- --</div>
+                    <div class="icon">
+                        <img src="images/Weather Icons/11.png" width="75" height="45">
+                    </div>
+                    <div class="temp">00 &deg;C</div>
+                </div>
+                <div class="hour-forcast">
+                    <div class="time">-- --</div>
+                    <div class="icon">
+                        <img src="images/Weather Icons/11.png" width="75" height="45">
+                    </div>
+                    <div class="temp">00 &deg;C</div>
+                </div>
+                <div class="hour-forcast">
+                    <div class="time">-- --</div>
+                    <div class="icon">
+                        <img src="images/Weather Icons/11.png" width="75" height="45">
+                    </div>
+                    <div class="temp">00 &deg;C</div>
+                </div>
+                <div class="hour-forcast">
+                    <div class="time">-- --</div>
+                    <div class="icon">
+                        <img src="images/Weather Icons/11.png" width="75" height="45">
+                    </div>
+                    <div class="temp">00 &deg;C</div>
+                </div>
+                <div class="hour-forcast">
+                    <div class="time">-- --</div>
+                    <div class="icon">
+                        <img src="images/Weather Icons/11.png" width="75" height="45">
+                    </div>
+                    <div class="temp">00 &deg;C</div>
+                </div>
+                <div class="hour-forcast">
+                    <div class="time">-- --</div>
+                    <div class="icon">
+                        <img src="images/Weather Icons/11.png" width="75" height="45">
+                    </div>
+                    <div class="temp">00 &deg;C</div>
+                </div>
+                <div class="hour-forcast">
+                    <div class="time">-- --</div>
+                    <div class="icon">
+                        <img src="images/Weather Icons/11.png" width="75" height="45">
+                    </div>
+                    <div class="temp">00 &deg;C</div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p class="col-md-6 mb-0 text-muted text-center text-md-start py-2">© 2023 All rights reserved
+                <span class="logo text-primary fw-bold ms-4">News 365</span>
+            </p>
+        </div>
+    </footer>
+  </body>
+</html>

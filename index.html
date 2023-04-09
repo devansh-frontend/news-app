@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Read Latest news and articles" />
+  <meta name="author" content="Devansh Chauhan" />
+  <title>News 365</title>
+  <script src="./JS/index.js" async defer></script>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
+ </head>
+ <body>
+  <!-- header or navbar -->
+  <header class="sticky-top bg-white border-bottom">
+   <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
+    <div class="container">
+     <a class="navbar-brand text-primary" href="index.html">
+      <span class="logo text-primary fw-bold">News 365</span>
+     </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+      <div class="offcanvas-header">
+       <h5 class="offcanvas-title" id="offcanvasNavbar2Label">News 365</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+       <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+        <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="weather.html">Weather</a>
+        </li>
+        <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Categories </a>
+         <ul class="dropdown-menu">
+          <li>
+           <a class="dropdown-item" href="categories.html?category=general">Latest</a>
+          </li>
+          <li>
+           <a class="dropdown-item" href="categories.html?category=business">Business</a>
+          </li>
+          <li>
+           <a class="dropdown-item" href="categories.html?category=health">Health</a>
+          </li>
+          <li>
+           <a class="dropdown-item" href="categories.html?category=sports">Sports</a>
+          </li>
+          <li>
+           <a class="dropdown-item" href="categories.html?category=world">World</a>
+          </li>
+          <li>
+           <a class="dropdown-item" href="categories.html?category=technology">Technology</a>
+          </li>
+         </ul>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="quiz.html">Play Quiz</a>
+        </li>
+       </ul>
+       <form class="d-flex mt-3 mt-lg-0" role="search" action="search.html" method="get">
+        <input class="form-control me-2" type="search" placeholder="Search" autocomplete="off" aria-label="Search" name="Search" required />
+        <button class="btn btn-outline-success searchBTN" type="submit">Search</button>
+       </form>
+      </div>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <!-- banner (breaking news) section  -->
+  <section id="banner">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-8 col-lg-6 py-5 col-xl-5">
+      <div class="news py-4">
+       <h1 class="display-5 fw-normal text-white">Breaking News</h1>
+       <p class="post-title fw-bold text-white">
+        <span class="placeholder glow col-5"></span>
+        <span class="placeholder glow col-6 bg-success"></span>
+        <span class="placeholder glow col-8 bg-info"></span>
+       </p>
+       <a href="#" target="_blank" class="btn disabled placeholder glow bg-primary post-link"></a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- latest news section -->
+  <section id="latest">
+   <div class="container py-4">
+    <div class="row">
+     <div class="col-12">
+      <h4 class="text-center pb-2">Latest News</h4>
+     </div>
+    </div>
+    <div class="row g-4 wrapper position-relative">
+     <div class="loader-box col">
+      <div class="loader">
+       <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+       </svg>
+      </div>
+     </div>
+    </div>
+   </div>
+   <template id="template">
+    <div class="col-12 col-md-6 col-lg-4">
+     <div class="news">
+      <div class="news-image">
+       <img src="" alt="" class="post-image border rounded bg-light" loading="lazy" />
+      </div>
+      <div class="post-details small d-flex justify-content-between flex-wrap">
+       <span class="date text-muted">...</span>
+       <span class="source text-capitalize text-danger">...</span>
+      </div>
+      <div class="post-title fw-bold my-1">...</div>
+      <div class="post-text text-muted">...</div>
+      <a href="#" target="_blank" class="post-link text-decoration-none text-primary p-0 small fw-bold"> Read post<i class="uil uil-arrow-up-right"></i></a>
+     </div>
+    </div>
+   </template>
+  </section>
+  <!-- trending news section -->
+  <section id="trending" class="bg-light">
+   <div class="container py-4">
+    <div class="row">
+     <div class="col-12">
+      <h4 class="text-center pb-2">Most Popular</h4>
+     </div>
+    </div>
+    <div class="row g-4 wrapper">
+     <div class="loader-box">
+      <div class="loader">
+       <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+       </svg>
+      </div>
+     </div>
+    </div>
+    <template id="template">
+     <div class="col-12 col-md-6">
+      <div class="news">
+       <div class="news-image">
+        <img src="" alt="" class="post-image rounded bg-light border" loading="lazy" />
+       </div>
+       <div class="post-details small d-flex justify-content-between flex-wrap">
+        <span class="date text-muted">...</span>
+        <span class="source text-capitalize text-success">bloomberg</span>
+       </div>
+       <div class="post-title fw-bold py-1">..</div>
+       <div class="post-text text-muted">...</div>
+       <a href="#" class="post-link text-decoration-none text-primary p-0 small fw-bold"> Read post <i class="uil uil-arrow-up-right"></i></a>
+      </div>
+     </div>
+    </template>
+   </div>
+  </section>
+  <!-- sports and world news  -->
+  <section id="categories">
+   <div class="container py-4">
+    <div class="row g-4">
+     <div class="col-12 col-md-6">
+      <h4 class="text-center text-md-start">Sports</h4>
+      <template id="template3">
+       <div class="news">
+        <div class="container p-0 py-2">
+         <div class="row g-2">
+          <div class="col-12 col-sm-6 col-md-12 col-lg-6 col-xl-4">
+           <div class="news-image">
+            <img src="" alt="" class="post-image rounded bg-light border" loading="lazy" />
+           </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-12 col-lg-6 col-xl-8 d-flex flex-column justify-content-between">
+           <div class="post-details small d-flex justify-content-between flex-wrap">
+            <span class="date text-muted">..</span>
+            <span class="source text-capitalize text-warning">..</span>
+           </div>
+           <div class="post-title py-1">..</div>
+           <a href="#" class="post-link text-decoration-none text-primary p-0 small fw-bold mt-auto"> Read post <i class="uil uil-arrow-up-right"></i></a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </template>
+      <div class="sports-wrapper">
+       <div class="loader-box">
+        <div class="loader">
+         <svg class="circular" viewBox="25 25 50 50">
+          <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+         </svg>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-12 col-md-6">
+      <h4 class="text-center text-md-start">World</h4>
+      <div class="entertainment-wrapper">
+       <div class="loader-box">
+        <div class="loader">
+         <svg class="circular" viewBox="25 25 50 50">
+          <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+         </svg>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- footer section -->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 border-top bg-light">
+   <div class="container">
+    <div class="row">
+     <p class="col-md-6 mb-0 text-muted text-center text-md-start py-2">
+      © 2023 All rights reserved
+      <span class="logo text-primary fw-bold ms-4">News 365</span>
+     </p>
+     <ul class="nav col-md-6 justify-content-center justify-content-md-end p-0 m-0">
+      <li class="nav-item">
+       <a href="#" class="nav-link px-2 text-muted">Home</a>
+      </li>
+      <li class="nav-item">
+       <a href="#" class="nav-link px-2 text-muted">Features</a>
+      </li>
+      <li class="nav-item">
+       <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+      </li>
+      <li class="nav-item">
+       <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+      </li>
+      <li class="nav-item">
+       <a href="#" class="nav-link px-2 text-muted">About</a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </footer>
+  <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+   crossorigin="anonymous"
+  ></script>
+ </body>
+</html>

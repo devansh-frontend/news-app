@@ -1,0 +1,495 @@
+[
+  {
+    "quizID": "28226",
+    "quizTitle": "HTML Quiz",
+    "totalQus": "10",
+    "questions": [
+      {
+        "question": "What does HTML stand for?",
+        "options": [
+          "Hyper Text Markup Language",
+          "Hyperlinks and Text Markup Language",
+          "Home Tool Markup Language",
+          "Hyperlinks and Text Management Language"
+        ],
+        "answer": "Hyper Text Markup Language"
+      },
+      {
+        "question": "Which HTML tag is used to define a paragraph?",
+        "options": ["<p>", "<para>", "<paragraph>", "<pg>"],
+        "answer": "<p>"
+      },
+      {
+        "question": "Which HTML attribute is used to specify an alternate text for an image?",
+        "options": ["src", "alt", "title", "href"],
+        "answer": "alt"
+      },
+      {
+        "question": "Which HTML tag is used to link to an external style sheet?",
+        "options": ["<link>", "<style>", "<href>", "<script>"],
+        "answer": "<link>"
+      },
+      {
+        "question": "Which HTML tag is used to create a hyperlink?",
+        "options": ["<link>", "<a>", "<h1>", "<p>"],
+        "answer": "<a>"
+      },
+      {
+        "question": "Which HTML tag is used to create a table?",
+        "options": ["<table>", "<tr>", "<td>", "All of the above"],
+        "answer": "<table>"
+      },
+      {
+        "question": "Which HTML tag is used to define a list item?",
+        "options": ["<li>", "<ul>", "<ol>", "All of the above"],
+        "answer": "<li>"
+      },
+      {
+        "question": "Which HTML attribute is used to specify a unique name for an element?",
+        "options": ["id", "class", "name", "style"],
+        "answer": "id"
+      },
+      {
+        "question": "Which HTML tag is used to define a header for a document or section?",
+        "options": ["<header>", "<h1>", "<h2>", "<nav>"],
+        "answer": "<header>"
+      },
+      {
+        "question": "Which HTML tag is used to define a line break?",
+        "options": ["<break>", "<br>", "<lb>", "<line>"],
+        "answer": "<br>"
+      }
+    ]
+  },
+  {
+    "quizID": "98210",
+    "quizTitle": "Math Quiz",
+    "totalQus": "5",
+    "questions": [
+      {
+        "question": "What is the value of pi (π)?",
+        "options": ["3.14", "2.71", "1.62", "4.20"],
+        "answer": "3.14"
+      },
+      {
+        "question": "What is the formula to calculate the area of a rectangle?",
+        "options": ["A = lw", "A = πr^2", "A = bh", "A = 2πr"],
+        "answer": "A = lw"
+      },
+      {
+        "question": "What is the formula to calculate the perimeter of a circle?",
+        "options": ["P = 2l + 2w", "P = 2πr", "P = l + w", "P = 4s"],
+        "answer": "P = 2πr"
+      },
+      {
+        "question": "What is the formula to calculate the volume of a sphere?",
+        "options": ["V = lwh", "V = πr^2h", "V = (4/3)πr^3", "V = Bh"],
+        "answer": "V = (4/3)πr^3"
+      },
+      {
+        "question": "What is the Pythagorean theorem?",
+        "options": ["a² + b² = c²", "a + b = c", "a/b = c/d", "a² - b² = c²"],
+        "answer": "a² + b² = c²"
+      }
+    ]
+  },
+  {
+    "quizID": "11210",
+    "quizTitle": "Sports Quiz",
+    "totalQus": "20",
+    "questions": [
+      {
+        "question": "Which country won the 2018 FIFA World Cup?",
+        "options": ["Brazil", "Germany", "France", "Spain"],
+        "answer": "France"
+      },
+      {
+        "question": "Which tennis player has won the most Grand Slam titles in history?",
+        "options": [
+          "Roger Federer",
+          "Novak Djokovic",
+          "Rafael Nadal",
+          "Pete Sampras"
+        ],
+        "answer": "Novak Djokovic"
+      },
+      {
+        "question": "Which NFL team has won the most Super Bowl titles?",
+        "options": [
+          "Dallas Cowboys",
+          "New England Patriots",
+          "Pittsburgh Steelers",
+          "San Francisco 49ers"
+        ],
+        "answer": "Pittsburgh Steelers"
+      },
+      {
+        "question": "Which country has won the most Olympic gold medals?",
+        "options": ["China", "Russia", "United States", "Germany"],
+        "answer": "United States"
+      },
+      {
+        "question": "Which NBA player has won the most MVP awards?",
+        "options": [
+          "Kareem Abdul-Jabbar",
+          "Michael Jordan",
+          "LeBron James",
+          "Bill Russell"
+        ],
+        "answer": "Kareem Abdul-Jabbar"
+      },
+      {
+        "question": "Which boxer holds the record for the most heavyweight title defenses?",
+        "options": [
+          "Mike Tyson",
+          "Muhammad Ali",
+          "Joe Louis",
+          "Wladimir Klitschko"
+        ],
+        "answer": "Joe Louis"
+      },
+      {
+        "question": "Which country won the most gold medals at the 2021 Tokyo Olympics?",
+        "options": ["Japan", "China", "United States", "Great Britain"],
+        "answer": "United States"
+      },
+      {
+        "question": "Which golf player has won the most major championships in history?",
+        "options": [
+          "Tiger Woods",
+          "Jack Nicklaus",
+          "Arnold Palmer",
+          "Gary Player"
+        ],
+        "answer": "Jack Nicklaus"
+      },
+      {
+        "question": "Which team won the 2021 NBA championship?",
+        "options": [
+          "Phoenix Suns",
+          "Milwaukee Bucks",
+          "Los Angeles Lakers",
+          "Brooklyn Nets"
+        ],
+        "answer": "Milwaukee Bucks"
+      },
+      {
+        "question": "Which country won the Euro 2020 soccer tournament?",
+        "options": ["Italy", "Spain", "England", "Portugal"],
+        "answer": "Italy"
+      },
+      {
+        "question": "Which cyclist has won the most Tour de France titles?",
+        "options": [
+          "Miguel Indurain",
+          "Lance Armstrong",
+          "Eddy Merckx",
+          "Chris Froome"
+        ],
+        "answer": "Eddy Merckx"
+      },
+      {
+        "question": "Which MLB player holds the record for the most career home runs?",
+        "options": ["Barry Bonds", "Hank Aaron", "Babe Ruth", "Alex Rodriguez"],
+        "answer": "Barry Bonds"
+      },
+      {
+        "question": "Which team has won the most Stanley Cup titles in NHL history?",
+        "options": [
+          "Boston Bruins",
+          "Montreal Canadiens",
+          "Chicago Blackhawks",
+          "Toronto Maple Leafs"
+        ],
+        "answer": "Montreal Canadiens"
+      },
+      {
+        "question": "Which country won the 2019 Rugby World Cup?",
+        "options": ["South Africa", "New Zealand", "Australia", "England"],
+        "answer": "South Africa"
+      },
+      {
+        "question": "Which Formula One driver holds the record for the most world championships?",
+        "options": [
+          "Michael Schumacher",
+          "Ayrton Senna",
+          "Lewis Hamilton",
+          "Juan Manuel Fangio"
+        ],
+        "answer": "Michael Schumacher"
+      },
+      {
+        "question": "Which soccer player has won the most Ballon d'Or awards?",
+        "options": [
+          "Lionel Messi",
+          "Cristiano Ronaldo",
+          "Zinedine Zidane",
+          "Michel Platini"
+        ],
+        "answer": "Lionel Messi"
+      },
+      {
+        "question": "Which boxer has the highest knockout percentage in heavyweight boxing history?",
+        "options": [
+          "Mike Tyson",
+          "George Foreman",
+          "Deontay Wilder",
+          "Lennox Lewis"
+        ],
+        "answer": "Deontay Wilder"
+      },
+      {
+        "question": "Which college football team has won the most national championships?",
+        "options": [
+          "Alabama Crimson Tide",
+          "Notre Dame Fighting Irish",
+          "Ohio State Buckeyes",
+          "USC Trojans"
+        ],
+        "answer": "Alabama Crimson Tide"
+      },
+      {
+        "question": "Which women's soccer team has won the most World Cup titles?",
+        "options": ["United States", "Brazil", "Germany", "Japan"],
+        "answer": "United States"
+      },
+      {
+        "question": "Which baseball player holds the record for the most career hits?",
+        "options": ["Pete Rose", "Ichiro Suzuki", "Hank Aaron", "Stan Musial"],
+        "answer": "Pete Rose"
+      }
+    ]
+  },
+  {
+    "quizID": "16226",
+    "quizTitle": "CSS Quiz",
+    "totalQus": "10",
+    "questions": [
+      {
+        "question": "What does CSS stand for?",
+        "options": [
+          "Cascading Style Sheets",
+          "Cascading Script Sheets",
+          "Cascading Style Syntax",
+          "Cascading Script Syntax"
+        ],
+        "answer": "Cascading Style Sheets"
+      },
+      {
+        "question": "Which property is used to change the font size of an element?",
+        "options": ["font-weight", "font-style", "font-family", "font-size"],
+        "answer": "font-size"
+      },
+      {
+        "question": "Which property is used to add a background color to an element?",
+        "options": [
+          "color",
+          "background-color",
+          "background-image",
+          "background-repeat"
+        ],
+        "answer": "background-color"
+      },
+      {
+        "question": "Which property is used to set the height of an element?",
+        "options": ["width", "height", "padding", "margin"],
+        "answer": "height"
+      },
+      {
+        "question": "Which property is used to set the text color of an element?",
+        "options": ["background-color", "color", "text-color", "font-color"],
+        "answer": "color"
+      },
+      {
+        "question": "Which property is used to add a border to an element?",
+        "options": [
+          "border-width",
+          "border-style",
+          "border-color",
+          "All of the above"
+        ],
+        "answer": "All of the above"
+      },
+      {
+        "question": "Which property is used to position an element relative to its parent element?",
+        "options": ["position", "float", "display", "clear"],
+        "answer": "position"
+      },
+      {
+        "question": "Which property is used to hide an element?",
+        "options": ["visibility", "opacity", "display", "All of the above"],
+        "answer": "visibility"
+      },
+      {
+        "question": "Which property is used to create a drop shadow effect for an element?",
+        "options": [
+          "box-shadow",
+          "text-shadow",
+          "border-shadow",
+          "All of the above"
+        ],
+        "answer": "box-shadow"
+      },
+      {
+        "question": "Which property is used to control the spacing between lines of text?",
+        "options": [
+          "line-height",
+          "text-height",
+          "font-line",
+          "All of the above"
+        ],
+        "answer": "line-height"
+      }
+    ]
+  },
+  {
+    "quizID": "78286",
+    "quizTitle": "Science Quiz",
+    "totalQus": "7",
+    "questions": [
+      {
+        "question": "What is the most abundant gas in Earth's atmosphere?",
+        "options": ["oxygen", "nitrogen", "carbon dioxide", "argon"],
+        "answer": "nitrogen"
+      },
+      {
+        "question": "Which subatomic particles are found in the nucleus of an atom?",
+        "options": [
+          "protons and electrons",
+          "protons and neutrons",
+          "electrons and neutrons",
+          "protons, electrons, and neutrons"
+        ],
+        "answer": "protons and neutrons"
+      },
+      {
+        "question": "What type of chemical bond involves the sharing of electrons between atoms?",
+        "options": [
+          "ionic bond",
+          "covalent bond",
+          "metallic bond",
+          "hydrogen bond"
+        ],
+        "answer": "covalent bond"
+      },
+      {
+        "question": "What is the process by which plants convert sunlight into energy?",
+        "options": [
+          "respiration",
+          "photosynthesis",
+          "transpiration",
+          "evaporation"
+        ],
+        "answer": "photosynthesis"
+      },
+      {
+        "question": "What is the smallest unit of matter?",
+        "options": ["molecule", "atom", "cell", "proton"],
+        "answer": "atom"
+      },
+      {
+        "question": "What is the force that pulls objects towards each other?",
+        "options": ["gravity", "friction", "magnetism", "electromagnetism"],
+        "answer": "gravity"
+      },
+      {
+        "question": "What type of energy is stored in an object due to its position or condition?",
+        "options": [
+          "kinetic energy",
+          "potential energy",
+          "thermal energy",
+          "radiant energy"
+        ],
+        "answer": "potential energy"
+      }
+    ]
+  },
+  {
+    "quizID": "70626",
+    "quizTitle": " GK Quiz",
+    "totalQus": "8",
+    "questions": [
+        {
+          "question": "What is the capital of Australia?",
+          "options": [
+            "Sydney",
+            "Melbourne",
+            "Canberra",
+            "Brisbane"
+          ],
+          "answer": "Canberra"
+        },
+        {
+          "question": "What is the smallest country in the world?",
+          "options": [
+            "Monaco",
+            "Maldives",
+            "Vatican City",
+            "San Marino"
+          ],
+          "answer": "Vatican City"
+        },
+        {
+          "question": "Who wrote the novel 'To Kill a Mockingbird'?",
+          "options": [
+            "Harper Lee",
+            "Ernest Hemingway",
+            "J.D. Salinger",
+            "William Faulkner"
+          ],
+          "answer": "Harper Lee"
+        },
+        {
+          "question": "What is the tallest mountain in Africa?",
+          "options": [
+            "Mount Kilimanjaro",
+            "Mount Kenya",
+            "Mount Rwenzori",
+            "Mount Meru"
+          ],
+          "answer": "Mount Kilimanjaro"
+        },
+        {
+          "question": "What is the currency of Japan?",
+          "options": [
+            "Yen",
+            "Dollar",
+            "Euro",
+            "Pound"
+          ],
+          "answer": "Yen"
+        },
+        {
+          "question": "Which planet is known as the 'Red Planet'?",
+          "options": [
+            "Jupiter",
+            "Venus",
+            "Mars",
+            "Saturn"
+          ],
+          "answer": "Mars"
+        },
+        {
+          "question": "What is the largest desert in the world?",
+          "options": [
+            "Sahara",
+            "Arabian",
+            "Gobi",
+            "Antarctic"
+          ],
+          "answer": "Antarctic"
+        },
+        {
+          "question": "What is the national animal of Canada?",
+          "options": [
+            "Polar bear",
+            "Beaver",
+            "Moose",
+            "Caribou"
+          ],
+          "answer": "Beaver"
+        }
+      ]    
+  }
+
+]

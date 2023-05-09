@@ -1,5 +1,23 @@
 const key = "22fe9e88d4c7108bb689f567a7d4d342";
 const url = "https://gnews.io/api/v4/";
+const url2 = 'https://real-time-finance-data.p.rapidapi.com/market-trends?trend_type=CURRENCIES&country=us&language=en';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'f6eaf58061msh81443620cb46a37p127041jsnac2909f585ec',
+		'X-RapidAPI-Host': 'real-time-finance-data.p.rapidapi.com'
+	}
+};
+async function getExchangeRate(){
+try {
+	const response = await fetch(url2, options);
+	const result = await response.json();
+	console.log(result);
+} catch (error) {
+	console.error(error);
+}
+}
+getExchangeRate()
 // fetching news from API
 fetchNews();
 async function fetchNews() {
